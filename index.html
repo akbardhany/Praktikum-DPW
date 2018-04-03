@@ -8,6 +8,13 @@
     <script src="./js/jquery-3.3.1.js"></script>
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("button").click(function(){
+          alert("Welcome! " + $("#zou").val());
+        });
+      });
+    </script>
   </head>
   <body><tt><center>
     <div class="container" style="padding:30px;">
@@ -21,12 +28,12 @@
             <tr>
               <td>Name</td>
               <td>:</td>
-              <td><input type="text" name="urname" placeholder="ur name, please" value="zouann"></td>
+              <td><input type="text" name="urname" placeholder="ur name, please" value="zouann" id="zou"></td>
             </tr>
             <tr>
               <td></td>
               <td></td>
-              <td><a href="a.html" data-toggle="tooltip" data-placement="right" title="Hello!"><button type="button" name="button" class="btn btn-outline-success">SUBMIT</button></a></td>
+              <td><a href="home.html" data-toggle="tooltip" data-placement="right" title="Hello!"><button type="button" name="button" class="btn btn-outline-success">SUBMIT</button></a></td>
             </tr>
           </table>
         </div>
