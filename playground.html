@@ -16,6 +16,11 @@
         para.appendChild(t);
         document.getElementById("append").appendChild(para);
     }
+    $(document).ready(function(){
+      $("#btnRemove").click(function(){
+        $("#append").empty();
+      });
+    });
     </script>
   </head>
   <body><tt>
