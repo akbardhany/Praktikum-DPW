@@ -8,6 +8,15 @@
     <script src="./js/jquery-3.3.1.js"></script>
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script>
+    function myAppend() {
+        var para = document.createElement("li");
+        var x = document.getElementById("myText").value;
+        var t = document.createTextNode(x);
+        para.appendChild(t);
+        document.getElementById("append").appendChild(para);
+    }
+    </script>
   </head>
   <body><tt>
     <div class="container">
