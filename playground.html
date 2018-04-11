@@ -37,11 +37,25 @@
               <div class="col-sm-1"></div>
               <div class="col-sm-11">
                 <p>U can edit the text to create li element with jQuery append() method</p>
-                <input type="text" id="myText" value="have fun">
-                <button onclick="myAppend()">Do it</button>
-                <button id="btnRemove">Cleared out</button>
-                <p id="append"></p>
               </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-1"></div>
+              <div class="col-sm-6">
+                <input type="text" id="myText" value="have fun" class="form-control">
+                &nbsp;
+              </div>
+              <div class="col-sm-5">
+                <button onclick="myAppend()" class="btn btn-outline-success">Do it</button>
+                <button id="btnRemove" class="btn btn-outline-danger">Cleared out</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4">
+                <center><p id="append"></p></center>
+              </div>
+              <div class="col-sm-4"></div>
             </div>
           </fieldset>
         </div>
