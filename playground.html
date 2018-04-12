@@ -29,6 +29,20 @@
       }
       document.getElementById("resLoop").innerHTML = textLoop;
     }
+    function customLoop() {
+    	var tCL = document.getElementById("txtCustomLoop").value;
+        var nCL = document.getElementById("numberCustomLoop").value;
+        var textcusLoop = "";
+        var i;
+         if (i < 1){
+      	 	textcusLoop = "Can't executed";
+         }else{
+         	for (i = 1; i <= nCL; i++) {
+            	textcusLoop += i + ". " + tCL + "<br />";
+          	}
+         }
+         document.getElementById("resCustomLoop").innerHTML = textcusLoop;
+    }
     </script>
   </head>
   <body><tt>
