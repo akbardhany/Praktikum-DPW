@@ -9,13 +9,15 @@
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script>
-    function myAppend() {
+    $(document).ready(function(){
+      $("#btnAppend").click(function(){
         var para = document.createElement("li");
         var x = document.getElementById("myText").value;
         var t = document.createTextNode(x);
         para.appendChild(t);
         document.getElementById("append").appendChild(para);
-    }
+      });
+    });
     $(document).ready(function(){
       $("#btnRemove").click(function(){
         $("#append").empty();
@@ -39,7 +41,7 @@
           	}
          document.getElementById("resCustomLoop").innerHTML = textcusLoop;
     }
-    function nnp(){
+    function nnpFind(){
 	    var nnp = document.getElementById("nnpNumber").value;
       var resNnp = "";
         if (nnp < 0) {
@@ -76,7 +78,7 @@
                 &nbsp;
               </div>
               <div class="col-sm-5">
-                <button onclick="myAppend()" class="btn btn-outline-success">Do it</button>
+                <button id="btnAppend" class="btn btn-outline-success">Do it</button>
                 <button id="btnRemove" class="btn btn-outline-danger">Cleared out</button>
               </div>
             </div>
@@ -152,10 +154,10 @@
             <div class="row">
               <div class="col-sm-3"></div>
               <div class="col-sm-4">
-                <input type="number" id="nnpNumber" class="form-control" placeholder="ur number">&nbsp;
+                <input type="number" id="nnpNumber" class="form-control" placeholder="ur number" value="2">&nbsp;
               </div>
               <div class="col-sm-2">
-                <button onclick="nnp()" class="btn btn-outline-success">Find Out</button>
+                <button onclick="nnpFind()" class="btn btn-outline-success">Find Out</button>
               </div>
             </div>
             <div class="row">
