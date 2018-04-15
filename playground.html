@@ -23,14 +23,16 @@
         $("#append").empty();
       });
     });
-    function awaw() {
+    $(document).ready(function(){
+      $("#btnAutoLoop").click(function(){
       var textLoop = "";
       var i;
       for (i = -2; i < 8; i++) {
         textLoop += i + " ";
       }
       document.getElementById("resLoop").innerHTML = textLoop;
-    }
+      });
+    });
     function customLoop() {
     	var tCL = document.getElementById("txtCustomLoop").value;
         var nCL = document.getElementById("numberCustomLoop").value;
@@ -101,7 +103,7 @@
               <div class="col-sm-1"></div>
               <div class="col-sm-6">Automatic looping with JS <i>for loop</i> method</div>&nbsp;
               <div class="col-sm-2">
-                <button onclick="awaw()" class="btn btn-outline-info">Click Me</button>
+                <button id="btnAutoLoop" class="btn btn-outline-info">Click Me</button>
               </div>
             </div>
             <br />
