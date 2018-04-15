@@ -39,6 +39,18 @@
           	}
          document.getElementById("resCustomLoop").innerHTML = textcusLoop;
     }
+    function nnp(){
+	    var nnp = document.getElementById("nnpNumber").value;
+      var resNnp = "";
+        if (nnp < 0) {
+    	     resNnp += nnp + " is Negative";
+	      }else if (nnp > 0) {
+    	     resNnp += nnp + " is Positive";
+        }else{
+    	     resNnp += nnp + " is Netral";
+        }
+      document.getElementById("nnpRes").innerHTML = resNnp;
+    }
     </script>
   </head>
   <body><tt>
