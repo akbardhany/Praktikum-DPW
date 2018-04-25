@@ -26,12 +26,12 @@
     });
     $(document).ready(function(){
       $("#btnAutoLoop").click(function(){
-      var textLoop = "";
-      var i;
-      for (i = -2; i < 8; i++) {
-        textLoop += i + " ";
-      }
-      document.getElementById("resLoop").innerHTML = textLoop;
+        var textLoop = "";
+        var i;
+        for (i = Math.floor(Math.random() * 10)-10; i < Math.floor(Math.random() * 100)+1; i++) {
+          textLoop += i + " ";
+        }
+        document.getElementById("resLoop").innerHTML = textLoop;
       });
     });
     $(document).ready(function(){
