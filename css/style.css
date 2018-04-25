@@ -12,6 +12,6 @@
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- .close:hover:after{
-   content: " NO!";
- }
+.no-pointer{
+  pointer-events:none;
+}
